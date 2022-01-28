@@ -1,0 +1,40 @@
+{
+  "name": "@otpexhaustv2/typescript-lib-template",
+  "version": "1.0.0",
+  "description": "Create a typescript library template",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"node ./dist/index.js\"",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint src/**",
+    "build": "prettier --write \"src/**/*.ts\" && eslint src/** && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OtpExhaustv2/typescript-lib-template.git"
+  },
+  "keywords": [],
+  "author": "OtpExhaustv2",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OtpExhaustv2/typescript-lib-template/issues"
+  },
+  "homepage": "https://github.com/OtpExhaustv2/typescript-lib-template#readme",
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "@typescript-eslint/eslint-plugin": "^5.10.1",
+    "@typescript-eslint/parser": "^5.10.1",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "tsc-watch": "^4.5.0",
+    "typescript": "^4.4.4"
+  }
+}
